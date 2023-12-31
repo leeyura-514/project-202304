@@ -1,0 +1,113 @@
+// layout
+#header-area {
+  .util-area {
+    border-bottom: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    .util-list {
+      @include v-center;
+      justify-content: flex-end;
+      height: 3.2rem;
+      padding: 0 4rem;
+      li {
+        margin-left: 2.4rem;
+        a {
+          @include font-12;
+        }
+      }
+    }
+  }
+  .logo-area {
+    .logo-wrap {
+      @include flex-between;
+      padding: 0 4rem;
+      .logo {
+        width: 11.8rem;
+        height: 2rem;
+        background-image: url(../../images/logo.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        a {
+          display: block;
+          height: 100%;
+        }
+      }
+    }
+    .gnb-area {
+      @include flex-between;
+      .btn-search {
+        margin-left: 4rem;
+        cursor: pointer;
+        width: 2.4rem;
+        height: 2.4rem;
+        background-image: url(../../images/ico-search.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .btn-menu {
+        display: none;
+      }
+    }
+  }
+}
+#nav {
+  ul {
+    display: flex;
+  }
+  li {
+    @include all-center;
+    margin-left: 4rem;
+    height: 6.8rem;
+    &:first-child {
+      margin-left: 0;
+    }
+    a {
+      display: block;
+    }
+  }
+}
+
+@include mobile {
+  // layout responsive styles
+  #header-area {
+    .util-area {
+      display: none;
+    }
+    .logo-area {
+      .logo-wrap {
+        height: 5.4rem;
+        padding: 0 16px;
+        border-bottom: 1px solid #E5E5E5;
+        box-sizing: border-box;
+        .logo {
+          width: 9.2rem;
+          height: 1.6rem;
+          background-image: url(../../images/m-logo.png);
+        }
+      }
+      .gnb-area {
+        .btn-search {
+          margin-left: 0;
+          width: 2.4rem;
+          height: 2.4rem;
+          background-image: url(../../images/m-ico-search.png);
+        }
+        .btn-menu {
+          display: block;
+          width: 2.4rem;
+          height: 2.4rem;
+          margin-left: 0.8rem;
+          background-image: url(../../images/ico-menu.png);
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  #nav {
+    display: none;
+  }
+}

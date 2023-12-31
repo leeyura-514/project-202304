@@ -1,0 +1,294 @@
+/* font styles */
+html, body {
+  font-size: 62.5%;
+	font-family: $font, sans-serif;
+}
+div, p {
+  @include font-16;
+}
+
+/* common styles */
+#main {
+  overflow: hidden;
+}
+.blind {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+}
+.pc-view {
+  display: block;
+}
+.m-view {
+  display: none;
+}
+.flex-column {
+  display: flex;
+  width: 100%;
+  .col-3 {
+    @include col-3;
+  }
+  .col-4 {
+    @include col-4;
+  }
+  .col-6 {
+    @include col-6;
+  }
+  .col-8 {
+    @include col-8;
+  }
+  .col-9 {
+    @include col-9;
+  }
+}
+
+/* component styles */
+.common-inner {
+	max-width: 1920px;
+  height: 100%;
+	margin: 0 auto;
+}
+.contents-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+section {
+  margin: 4rem 0;
+  &:first-child {
+    margin: 0 0 4rem 0;
+  }
+  &:last-child {
+    margin: 4rem 0 0 0;
+  }
+}
+.title-box {
+  margin-bottom: 2.4rem;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+h3 {
+  @include font-16;
+}
+.sc-title {
+  margin-bottom: 0.8rem;
+}
+.sub-title {
+  display: block;
+  @include font-14;
+  color: #9d9d9d;
+}
+
+//component- card-list
+.card-list {
+  @include flex-wrap;
+  li {
+    flex: calc((100% - 6.4rem) /5);
+    max-width: calc((100% - 6.4rem) /5);
+    &:nth-child(n+6) {
+      margin-top: 2.4rem;
+    }
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .thumb {
+      overflow: hidden;
+      border-radius: 8px;
+    }
+    .thumb-desc {
+      margin-top: .8rem;
+      text-align: center;
+    }
+  }
+}
+
+//component- prd
+.prd-wrap {
+  display: none;
+}
+.prd-list {
+  a {
+    display: block;
+  }
+}
+.prd-item + .prd-item {
+  margin-left: 2rem;
+}
+
+.thumb {
+  position: relative;
+  margin-bottom: 0.8rem;
+  .badge {
+    @include prd-badge;
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+.info-box {
+  .brand-name {
+    display: block;
+    @include font-14;
+    margin-bottom: 0.8rem;
+    @include text-underline;
+  }
+  .prd-name {
+    @include font-14;
+    margin-bottom: 0.8rem;
+  }
+  .origin-price {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+  }
+  .price-desc {
+    display: block;
+    @include font-12;
+    color: #9D9D9D;
+  }
+  .tag-wrap {
+    @include flex-between;
+    width: 6.6rem;
+    height: 2rem;
+    padding: 0 .8rem;
+    margin-bottom: 0.8rem;
+    border-radius: 2px;
+    background: #F3F9F7;
+    .ico-quick-delivery {
+      width: 1.1rem;
+      height: 1.3rem;
+      background-image: url('../../images/prd-tag-item-quick.png');
+      background-size: contain;
+    }
+    p {
+      color: #02C157;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+  }
+}
+
+//component- btn
+.btn-wrap {
+  @include all-center;
+  .btn-more {
+    @include btn-more;
+  }
+  .btn-link {
+    @include btn-more;
+    color: #fff;
+  }
+}
+
+// _common.scss responsive styles
+@include mobile {
+  .small-view {
+    display: block;
+  }
+  .large-view {
+    display: none;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  div, p, a {
+    font-size: 1.4rem;
+  }
+  .contents-inner {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+  .card-list {
+    li {
+      max-width: calc((100% - 3.6rem) /5);
+      &:nth-child(n+6) {
+        margin-top: 1.6rem;
+      }
+      a {
+        width: 100%;
+      }
+      .thumb {
+        overflow: hidden;
+        border-radius: 100%;
+        width: 5.5rem;
+        height: 5.5rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        img {
+          display: none;
+        }
+      }
+      .thumb-desc {
+        line-height: 1.3;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  //component - prd responsive styles
+  .prd-list {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    -ms-overflow-style:none;
+    scrollbar-width:none;
+    &::-webkit-scrollbar {
+      display:none;
+    }
+    a {
+      width: 19.9rem;
+      display: block;
+    }
+  }
+  .prd-item + .prd-item {
+    margin-left: 1.6rem;
+  }
+}
+@include tablet {
+  .small-view {
+    display: block;
+  }
+  .large-view {
+    display: none;
+  }
+  .card-list {
+    li {
+      .thumb {
+        width: 100%;
+        height: 11rem;
+      }
+    }
+  }
+}
+@include laptop {
+  .small-view {
+    display: none;
+  }
+  .large-view {
+    display: block;
+  }
+  .mobile-menu {
+    display: none;
+  }
+}
+@include desktop {
+  .small-view {
+    display: none;
+  }
+  .large-view {
+    display: block;
+  }
+}
+

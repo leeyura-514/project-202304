@@ -1,0 +1,100 @@
+[프로젝트 기본세팅]
+
+1) css 저장 경로
+"/dist/css"
+
+2) scss 저장 경로
+"/dist/scss"
+
+3) scss 컴파일 진행
+- /dist/scss 폴더 구조는 동일하게
+- 각 메인,서브 페이지에 맞춰 scss 파일을 발행
+- 공통 영역에 대한 반응형 CSS는 _common.scss 파일 내부에 삽입
+- 모든 페이지의 스타일시트는 styls.css 하나로 컴파일
+- child theme 사용시 style.min.css 사용금지(주석 사라짐)
+
+4) html 저장 경로
+"/html"
+
+5) 미디어파일 경로
+"/images"
+
+6) 기획서, 디자인 경로
+"/SB_디자인"
+
+7) Live Sass Compiler 셋업
+
+{
+    "editor.tabSize": 2,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveSassCompile.settings.compileOnWatch": false,	//Watch Sass 실행 시 모든 .scss 컴파일
+    "liveSassCompile.settings.watchOnLaunch": true,	//Watch Sass 자동 실행
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",   // 압축되지 않은 css 파일
+            "extensionName": ".css",
+            "savePath": "/dist/css",
+        },
+        {
+            "format": "compressed",   // 압축된 css 파일
+            "extensionName": ".min.css",
+            "savePath": "/dist/css",
+        }
+    ],
+    "liveSassCompile.settings.generateMap": false, // css.map 파일 생성
+    "liveSassCompile.settings.includeItems": [
+        "/dist/scss/*.scss"
+    ]
+}
+
+8) media query 반응형 해상도 범위
+@include mobile {
+  최대 : 820px 까지
+}
+@include tablet {
+  최소 : 768px 부터
+  최대 : 1023px 까지
+}
+@include laptop {
+  최소 : 821px 부터
+  최대 : 1199px 까지
+}
+@include desktop {
+  최소 : 1200px 이상
+}
+
+9) media query 반응형 해상도 대응 기본 글꼴 크기
+
+@media screen and (min-width: 280px) and (max-width: 319px) {
+  html, body {
+    font-size: 50% !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  html, body {
+    font-size: 62.5% !important;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 413px) {
+  html, body {
+    font-size: 68.75% !important;
+  }
+}
+// large smart phone ~ tablet
+@media screen and (min-width: 414px) and (max-width: 820px) {
+  html, body {
+    font-size: 75% !important;
+  }
+}
+// laptop ~ descktop width
+@media screen and (min-width: 821px) and (max-width: 1719px) {
+  html, body {
+    font-size: 50% !important;
+  }
+}
+
+10) 웹사이트 구축 필수 플러그인
+- Classic Editor : 고전편집기를 기본 편집기로 설정
+- WPCode Lite(구 : Insert Headers and Footers) : 워드프레스에서 </head>, </body> 태그에 소스코드를 삽입할 수 있음
+- File manager : 워드프레스 대시보드에서 FTP 기능을 사용할 수 있음
+- Yoast Duplicate Post : Post, Page를 복사하는 플러그인

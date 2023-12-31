@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KREAM</title>
+  <!-- 파비콘 적용 -->
+  <link rel="icon" href="./images/favicon.png" type="image/png" sizes="16x16">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./dist/css/style.css">
+</head>
+<body>
+  <header id="header-area">
+    <div class="util-area">
+      <ul class="util-list common-inner">
+        <li><a href="#">고객센터</a></li>
+        <li><a href="#">관심상품</a></li>
+        <li><a href="#">마이페이지</a></li>
+        <li><a href="#">로그인</a></li>
+      </ul>
+    </div>
+    <div class="logo-area">
+      <div class="logo-wrap common-inner">
+        <h1 class="logo"><a href="#"><span class="blind">KREAM</span></a></h1>
+        <div class="gnb-area">
+          <nav id="nav">
+            <ul>
+              <li><a href="#">STYLE</a></li>
+              <li><a href="#">SHOP</a></li>
+              <li><a href="#">ABOUT</a></li>
+            </ul>
+          </nav>
+          <div class="btn-search"><span class="blind">검색 아이콘</span></div>
+          <div class="btn-menu"><span class="blind">메뉴 아이콘</span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="main-slide">
+      <span class="blind"><h2 class="sc-title">메인 비주얼 슬라이드</h2></span>
+      <div class="swiper main-visual">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" slide-item="0"><a href="#"></a></div>
+          <div class="swiper-slide" slide-item="1"><a href="#"></a></div>
+          <div class="swiper-slide" slide-item="2"><a href="#"></a></div>
+          <div class="swiper-slide" slide-item="3"><a href="#"></a></div>
+          <div class="swiper-slide" slide-item="4"><a href="#"></a></div>
+          <div class="swiper-slide" slide-item="5"><a href="#"></a></div>
+          <div class="swiper-slide" slide-item="6"><a href="#"></a></div>
+          <div class="swiper-slide" slide-item="7"><a href="#"></a></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
+
+    <section id="shop-card">
+      <h2 class="sc-title"><span class="blind">쇼핑 메뉴 리스트</span></h2>
+      <div id="array" class="contents-inner">
+        <ul class="card-list list01">
+          <!-- <li>
+            <a href="#">
+              <div class="thumb" category-item="0"><img src="./images/category_01.webp" alt="럭키박스"></div>
+              <p class="thumb-desc">럭키박스</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb" category-item="1"><img src="./images/category_02.webp" alt="남성 추천"></div>
+              <p class="thumb-desc">남성 추천</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb" category-item="2"><img src="./images/category_03.gif" alt="여성 추천"></div>
+              <p class="thumb-desc">여성 추천</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb" category-item="3"><img src="./images/category_04.webp" alt="셀럽픽"></div>
+              <p class="thumb-desc">셀럽픽</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb" category-item="4"><img src="./images/category_05.webp" alt="이번주 브랜드관"></div>
+              <p class="thumb-desc">이번주 <br class="small-view">브랜드관</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb" category-item="5"><img src="./images/category_06.webp" alt="인기 럭셔리"></div>
+              <p class="thumb-desc">인기 럭셔리</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb" category-item="6"><img src="./images/category_07.webp" alt="아우터&니트"></div>
+              <p class="thumb-desc">아우터&니트</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb" category-item="7"><img src="./images/category_08.webp" alt="스웨트 셋업"></div>
+              <p class="thumb-desc">스웨트 셋업</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb" category-item="8"><img src="./images/category_09.webp" alt="겨울코디"></div>
+              <p class="thumb-desc">겨울코디</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb" category-item="9"><img src="./images/category_10.webp" alt="수수료 할인"></div>
+              <p class="thumb-desc">수수료 할인</p>
+            </a>
+          </li> -->
+        </ul>
+      </div>
+    </section>
+
+    <section id="new-product">
+      <div class="contents-inner">
+        <div class="title-box">
+          <h2 class="sc-title">Just Dropped</h2>
+          <span class="sub-title">발매 상품</span>
+        </div>
+        <div class="prd-wrap flex-container">
+          <ul class="prd-list flex-column">
+            <li class="prd-item col-4">
+              <a href="#">
+                <div class="thumb">
+                  <div class="badge"><span class="blind">관심 상품</span></div>
+                  <img src="./images/drop-01.png" alt="">
+                </div>
+                <div class="info-box">
+                  <span class="brand-name">Nike</span>
+                  <p class="prd-name">(W) Nike Dunk Low Wolf Grey Rosewood</p>
+                  <strong class="origin-price">140,000원</strong>
+                  <span class="price-desc">즉시 구매가</span>
+                </div>
+              </a>
+            </li>
+            <li class="prd-item col-4">
+              <a href="#">
+                <div class="thumb">
+                  <div class="badge"><span class="blind">관심 상품</span></div>
+                  <img src="./images/drop-02.png" alt="">
+                </div>
+                <div class="info-box">
+                  <span class="brand-name">Nike</span>
+                  <p class="prd-name">Nike x Sacai Zoom Cortez SP Iron Grey</p>
+                  <div class="tag-wrap">
+                    <i class="ico-quick-delivery"></i><p>빠른배송</p>
+                  </div>
+                  <strong class="origin-price">273,000원</strong>
+                  <span class="price-desc">즉시 구매가</span>
+                </div>
+              </a>
+            </li>
+            <li class="prd-item col-4">
+              <a href="#">
+                <div class="thumb">
+                  <div class="badge"><span class="blind">관심 상품</span></div>
+                  <img src="./images/drop-03.png" alt="">
+                </div>
+                <div class="info-box">
+                  <span class="brand-name">Nike</span>
+                  <p class="prd-name">(W) Nike Dunk Low Wolf Grey Rosewood</p>
+                  <strong class="origin-price">140,000원</strong>
+                  <span class="price-desc">즉시 구매가</span>
+                </div>
+              </a>
+            </li>
+            <li class="prd-item col-4">
+              <a href="#">
+                <div class="thumb">
+                  <div class="badge"><span class="blind">관심 상품</span></div>
+                  <img src="./images/drop-04.png" alt="">
+                </div>
+                <div class="info-box">
+                  <span class="brand-name">Nike</span>
+                  <p class="prd-name">Nike x Sacai Zoom Cortez SP Iron Grey</p>
+                  <div class="tag-wrap">
+                    <i class="ico-quick-delivery"></i><p>빠른배송</p>
+                  </div>
+                  <strong class="origin-price">273,000원</strong>
+                  <span class="price-desc">즉시 구매가</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="prd-wrap flex-container">
+          <ul class="prd-list flex-column">
+            <li class="prd-item col-4">
+              <a href="#">
+                <div class="thumb">
+                  <div class="badge"><span class="blind">관심 상품</span></div>
+                  <img src="./images/drop-01.png" alt="">
+                </div>
+                <div class="info-box">
+                  <span class="brand-name">Nike</span>
+                  <p class="prd-name">(W) Nike Dunk Low Wolf Grey Rosewood</p>
+                  <strong class="origin-price">140,000원</strong>
+                  <span class="price-desc">즉시 구매가</span>
+                </div>
+              </a>
+            </li>
+            <li class="prd-item col-4">
+              <a href="#">
+                <div class="thumb">
+                  <div class="badge"><span class="blind">관심 상품</span></div>
+                  <img src="./images/drop-02.png" alt="">
+                </div>
+                <div class="info-box">
+                  <span class="brand-name">Nike</span>
+                  <p class="prd-name">Nike x Sacai Zoom Cortez SP Iron Grey</p>
+                  <div class="tag-wrap">
+                    <i class="ico-quick-delivery"></i><p>빠른배송</p>
+                  </div>
+                  <strong class="origin-price">273,000원</strong>
+                  <span class="price-desc">즉시 구매가</span>
+                </div>
+              </a>
+            </li>
+            <li class="prd-item col-4">
+              <a href="#">
+                <div class="thumb">
+                  <div class="badge"><span class="blind">관심 상품</span></div>
+                  <img src="./images/drop-03.png" alt="">
+                </div>
+                <div class="info-box">
+                  <span class="brand-name">Nike</span>
+                  <p class="prd-name">(W) Nike Dunk Low Wolf Grey Rosewood</p>
+                  <strong class="origin-price">140,000원</strong>
+                  <span class="price-desc">즉시 구매가</span>
+                </div>
+              </a>
+            </li>
+            <li class="prd-item col-4">
+              <a href="#">
+                <div class="thumb">
+                  <div class="badge"><span class="blind">관심 상품</span></div>
+                  <img src="./images/drop-04.png" alt="">
+                </div>
+                <div class="info-box">
+                  <span class="brand-name">Nike</span>
+                  <p class="prd-name">Nike x Sacai Zoom Cortez SP Iron Grey</p>
+                  <div class="tag-wrap">
+                    <i class="ico-quick-delivery"></i><p>빠른배송</p>
+                  </div>
+                  <strong class="origin-price">273,000원</strong>
+                  <span class="price-desc">즉시 구매가</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="prd-wrap flex-container">
+          <ul class="prd-list flex-column">
+            <li class="prd-item col-4">
+              <a href="#">
+                <div class="thumb">
+                  <div class="badge"><span class="blind">관심 상품</span></div>
+                  <img src="./images/drop-01.png" alt="Nike">
+                </div>
+                <div class="info-box">
+                  <span class="brand-name">Nike</span>
+                  <p class="prd-name">(W) Nike Dunk Low Wolf Grey Rosewood</p>
+                  <strong class="origin-price">140,000원</strong>
+                  <span class="price-desc">즉시 구매가</span>
+                </div>
+              </a>
+            </li>
+            <li class="prd-item col-4">
+              <a href="#">
+                <div class="thumb">
+                  <div class="badge"><span class="blind">관심 상품</span></div>
+                  <img src="./images/drop-02.png" alt="Nike">
+                </div>
+                <div class="info-box">
+                  <span class="brand-name">Nike</span>
+                  <p class="prd-name">Nike x Sacai Zoom Cortez SP Iron Grey</p>
+                  <div class="tag-wrap">
+                    <i class="ico-quick-delivery"></i><p>빠른배송</p>
+                  </div>
+                  <strong class="origin-price">273,000원</strong>
+                  <span class="price-desc">즉시 구매가</span>
+                </div>
+              </a>
+            </li>
+            <li class="prd-item col-4">
+              <a href="#">
+                <div class="thumb">
+                  <div class="badge"><span class="blind">관심 상품</span></div>
+                  <img src="./images/drop-03.png" alt="Nike">
+                </div>
+                <div class="info-box">
+                  <span class="brand-name">Nike</span>
+                  <p class="prd-name">(W) Nike Dunk Low Wolf Grey Rosewood</p>
+                  <strong class="origin-price">140,000원</strong>
+                  <span class="price-desc">즉시 구매가</span>
+                </div>
+              </a>
+            </li>
+            <li class="prd-item col-4">
+              <a href="#">
+                <div class="thumb">
+                  <div class="badge"><span class="blind">관심 상품</span></div>
+                  <img src="./images/drop-04.png" alt="Nike">
+                </div>
+                <div class="info-box">
+                  <span class="brand-name">Nike</span>
+                  <p class="prd-name">Nike x Sacai Zoom Cortez SP Iron Grey</p>
+                  <div class="tag-wrap">
+                    <i class="ico-quick-delivery"></i><p>빠른배송</p>
+                  </div>
+                  <strong class="origin-price">273,000원</strong>
+                  <span class="price-desc">즉시 구매가</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="btn-wrap"><a href="#" class="btn-more">더보기</a></div>
+      </div>
+    </section>
+
+    <section id="brand">
+      <div class="contents-inner">
+        <div class="title-box">
+          <h2 class="sc-title">Brand Focus</h2>
+          <span class="sub-title">추천 브랜드</span>
+        </div>
+        <ul class="card-list list02">
+          <!-- <li>
+            <a href="#">
+              <div class="thumb" brand-item="0"><img src="./images/brand_01.webp" alt="비비안 웨스트우드"></div>
+              <p class="thumb-desc">비비안 웨스트우드</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb" brand-item="1"><img src="./images/brand_01.webp" alt="비비안 웨스트우드"></div>
+              <p class="thumb-desc">비비안 웨스트우드</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb" brand-item="2"><img src="./images/brand_01.webp" alt="비비안 웨스트우드"></div>
+              <p class="thumb-desc">비비안 웨스트우드</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb" brand-item="3"><img src="./images/brand_01.webp" alt="비비안 웨스트우드"></div>
+              <p class="thumb-desc">비비안 웨스트우드</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb" brand-item="4"><img src="./images/brand_01.webp" alt="비비안 웨스트우드"></div>
+              <p class="thumb-desc">비비안 웨스트우드</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb" brand-item="5"><img src="./images/brand_01.webp" alt="비비안 웨스트우드"></div>
+              <p class="thumb-desc">비비안 웨스트우드</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb" brand-item="6"><img src="./images/brand_01.webp" alt="비비안 웨스트우드"></div>
+              <p class="thumb-desc">비비안 웨스트우드</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb" brand-item="7"><img src="./images/brand_01.webp" alt="비비안 웨스트우드"></div>
+              <p class="thumb-desc">비비안 웨스트우드</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb" brand-item="8"><img src="./images/brand_01.webp" alt="비비안 웨스트우드"></div>
+              <p class="thumb-desc">비비안 웨스트우드</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb" brand-item="9"><img src="./images/brand_01.webp" alt="비비안 웨스트우드"></div>
+              <p class="thumb-desc">비비안 웨스트우드</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb" brand-item="10"><img src="./images/brand_01.webp" alt="비비안 웨스트우드"></div>
+              <p class="thumb-desc">비비안 웨스트우드</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb" brand-item="11"><img src="./images/brand_01.webp" alt="비비안 웨스트우드"></div>
+              <p class="thumb-desc">비비안 웨스트우드</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb" brand-item="12"><img src="./images/brand_01.webp" alt="비비안 웨스트우드"></div>
+              <p class="thumb-desc">비비안 웨스트우드</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb" brand-item="13"><img src="./images/brand_01.webp" alt="비비안 웨스트우드"></div>
+              <p class="thumb-desc">비비안 웨스트우드</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="thumb" brand-item="14"><img src="./images/brand_01.webp" alt="비비안 웨스트우드"></div>
+              <p class="thumb-desc">비비안 웨스트우드</p>
+            </a>
+          </li> -->
+        </ul>
+      </div>
+    </section>
+
+    <section id="banner">
+      <div class="banner-box"><a href="#"><span class="blind">배너 : 정가보다 저렴한 시세</span></a></div>
+    </section>
+
+    <section id="popular-pd">
+      <div class="contents-inner">
+        <div class="title-box">
+          <h2 class="sc-title">Most Popular</h2>
+          <span class="sub-title">인기 상품</span>
+        </div>
+        <div class="prd-wrap flex-container">
+          <ul class="prd-list flex-column">
+            <li class="prd-item col-4">
+              <a href="#">
+                <div class="thumb">
+                  <div class="badge"><span class="blind">관심 상품</span></div>
+                  <img src="./images/drop-01.png" alt="">
+                </div>
+                <div class="info-box">
+                  <span class="brand-name">Apple</span>
+                  <p class="prd-name">Apple AirPods Max Silver (Korean Ver.)</p>
+                  <div class="tag-wrap">
+                    <i class="ico-quick-delivery"></i><p>빠른배송</p>
+                  </div>
+                  <strong class="origin-price">765,000원</strong>
+                  <span class="price-desc">즉시 구매가</span>
+                </div>
+              </a>
+            </li>
+            <li class="prd-item col-4">
+              <a href="#">
+                <div class="thumb">
+                  <div class="badge"><span class="blind">관심 상품</span></div>
+                  <img src="./images/drop-02.png" alt="">
+                </div>
+                <div class="info-box">
+                  <span class="brand-name">Nike</span>
+                  <p class="prd-name">Nike x Sacai Zoom Cortez SP Iron Grey</p>
+                  <strong class="origin-price">273,000원</strong>
+                  <span class="price-desc">즉시 구매가</span>
+                </div>
+              </a>
+            </li>
+            <li class="prd-item col-4">
+              <a href="#">
+                <div class="thumb">
+                  <div class="badge"><span class="blind">관심 상품</span></div>
+                  <img src="./images/drop-03.png" alt="">
+                </div>
+                <div class="info-box">
+                  <span class="brand-name">Nike</span>
+                  <p class="prd-name">(W) Nike Dunk Low Wolf Grey Rosewood</p>
+                  <strong class="origin-price">140,000원</strong>
+                  <span class="price-desc">즉시 구매가</span>
+                </div>
+              </a>
+            </li>
+            <li class="prd-item col-4">
+              <a href="#">
+                <div class="thumb">
+                  <div class="badge"><span class="blind">관심 상품</span></div>
+                  <img src="./images/drop-04.png" alt="">
+                </div>
+                <div class="info-box">
+                  <span class="brand-name">Nike</span>
+                  <p class="prd-name">Nike x Sacai Zoom Cortez SP Iron Grey</p>
+                  <div class="tag-wrap">
+                    <i class="ico-quick-delivery"></i><p>빠른배송</p>
+                  </div>
+                  <strong class="origin-price">273,000원</strong>
+                  <span class="price-desc">즉시 구매가</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="prd-wrap flex-container">
+          <ul class="prd-list flex-column">
+            <li class="prd-item col-4">
+              <a href="#">
+                <div class="thumb">
+                  <div class="badge"><span class="blind">관심 상품</span></div>
+                  <img src="./images/drop-01.png" alt="">
+                </div>
+                <div class="info-box">
+                  <span class="brand-name">Nike</span>
+                  <p class="prd-name">(W) Nike Dunk Low Wolf Grey Rosewood</p>
+                  <strong class="origin-price">140,000원</strong>
+                  <span class="price-desc">즉시 구매가</span>
+                </div>
+              </a>
+            </li>
+            <li class="prd-item col-4">
+              <a href="#">
+                <div class="thumb">
+                  <div class="badge"><span class="blind">관심 상품</span></div>
+                  <img src="./images/drop-02.png" alt="">
+                </div>
+                <div class="info-box">
+                  <span class="brand-name">Nike</span>
+                  <p class="prd-name">Nike x Sacai Zoom Cortez SP Iron Grey</p>
+                  <div class="tag-wrap">
+                    <i class="ico-quick-delivery"></i><p>빠른배송</p>
+                  </div>
+                  <strong class="origin-price">273,000원</strong>
+                  <span class="price-desc">즉시 구매가</span>
+                </div>
+              </a>
+            </li>
+            <li class="prd-item col-4">
+              <a href="#">
+                <div class="thumb">
+                  <div class="badge"><span class="blind">관심 상품</span></div>
+                  <img src="./images/drop-03.png" alt="">
+                </div>
+                <div class="info-box">
+                  <span class="brand-name">Nike</span>
+                  <p class="prd-name">(W) Nike Dunk Low Wolf Grey Rosewood</p>
+                  <strong class="origin-price">140,000원</strong>
+                  <span class="price-desc">즉시 구매가</span>
+                </div>
+              </a>
+            </li>
+            <li class="prd-item col-4">
+              <a href="#">
+                <div class="thumb">
+                  <div class="badge"><span class="blind">관심 상품</span></div>
+                  <img src="./images/drop-04.png" alt="">
+                </div>
+                <div class="info-box">
+                  <span class="brand-name">Nike</span>
+                  <p class="prd-name">Nike x Sacai Zoom Cortez SP Iron Grey</p>
+                  <div class="tag-wrap">
+                    <i class="ico-quick-delivery"></i><p>빠른배송</p>
+                  </div>
+                  <strong class="origin-price">273,000원</strong>
+                  <span class="price-desc">즉시 구매가</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="prd-wrap flex-container">
+          <ul class="prd-list flex-column">
+            <li class="prd-item col-4">
+              <a href="#">
+                <div class="thumb">
+                  <div class="badge"><span class="blind">관심 상품</span></div>
+                  <img src="./images/drop-01.png" alt="">
+                </div>
+                <div class="info-box">
+                  <span class="brand-name">Nike</span>
+                  <p class="prd-name">(W) Nike Dunk Low Wolf Grey Rosewood</p>
+                  <strong class="origin-price">140,000원</strong>
+                  <span class="price-desc">즉시 구매가</span>
+                </div>
+              </a>
+            </li>
+            <li class="prd-item col-4">
+              <a href="#">
+                <div class="thumb">
+                  <div class="badge"><span class="blind">관심 상품</span></div>
+                  <img src="./images/drop-02.png" alt="">
+                </div>
+                <div class="info-box">
+                  <span class="brand-name">Nike</span>
+                  <p class="prd-name">Nike x Sacai Zoom Cortez SP Iron Grey</p>
+                  <div class="tag-wrap">
+                    <i class="ico-quick-delivery"></i><p>빠른배송</p>
+                  </div>
+                  <strong class="origin-price">273,000원</strong>
+                  <span class="price-desc">즉시 구매가</span>
+                </div>
+              </a>
+            </li>
+            <li class="prd-item col-4">
+              <a href="#">
+                <div class="thumb">
+                  <div class="badge"><span class="blind">관심 상품</span></div>
+                  <img src="./images/drop-03.png" alt="">
+                </div>
+                <div class="info-box">
+                  <span class="brand-name">Nike</span>
+                  <p class="prd-name">(W) Nike Dunk Low Wolf Grey Rosewood</p>
+                  <strong class="origin-price">140,000원</strong>
+                  <span class="price-desc">즉시 구매가</span>
+                </div>
+              </a>
+            </li>
+            <li class="prd-item col-4">
+              <a href="#">
+                <div class="thumb">
+                  <div class="badge"><span class="blind">관심 상품</span></div>
+                  <img src="./images/drop-04.png" alt="">
+                </div>
+                <div class="info-box">
+                  <span class="brand-name">Nike</span>
+                  <p class="prd-name">Nike x Sacai Zoom Cortez SP Iron Grey</p>
+                  <div class="tag-wrap">
+                    <i class="ico-quick-delivery"></i><p>빠른배송</p>
+                  </div>
+                  <strong class="origin-price">273,000원</strong>
+                  <span class="price-desc">즉시 구매가</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="btn-wrap"><a href="#" class="btn-more">더보기</a></div>
+      </div>
+    </section>
+
+    <section id="style-review">
+      <div class="contents-inner">
+        <div class="title-box">
+          <h2 class="sc-title">Style picks!</h2>
+        </div>
+        <div class="swiper style-slide">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="thumb">
+                  <div class="profile-box"><img src="./images/profile_01.png" alt="프로필 이미지01"></div>
+                  <img src="./images/style_01.png" alt="스타일 이미지">
+                  <span class="tag">@kyun</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="thumb">
+                  <div class="profile-box"><img src="./images/profile_02.png" alt="프로필 이미지02"></div>
+                  <img src="./images/style_02.png" alt="스타일 이미지">
+                  <span class="tag">@kyun</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="thumb">
+                  <div class="profile-box"><img src="./images/profile_03.png" alt="프로필 이미지03"></div>
+                  <img src="./images/style_03.png" alt="스타일 이미지">
+                  <span class="tag">@kyun</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="thumb">
+                  <div class="profile-box"><img src="./images/profile_04.png" alt="프로필 이미지04"></div>
+                  <img src="./images/style_04.png" alt="스타일 이미지">
+                  <span class="tag">@kyun</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="thumb">
+                  <div class="profile-box"><img src="./images/profile_05.png" alt="프로필 이미지05"></div>
+                  <img src="./images/style_05.png" alt="스타일 이미지">
+                  <span class="tag">@kyun</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="thumb">
+                  <div class="profile-box"><img src="./images/profile_06.png" alt="프로필 이미지06"></div>
+                  <img src="./images/style_06.png" alt="스타일 이미지">
+                  <span class="tag">@kyun</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="control-wrap">
+            <div class="swiper-control">
+              <div class="btn prev" role="button"></div>
+              <div class="btn next" role="button"></div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-wrap"><a href="#" class="btn-more">더보기</a></div>
+      </div>
+    </section>
+
+    <section id="bottom-banner">
+      <ul class="banner-list flex-column">
+        <li class="banner-item col-6" banner-num="0">
+          <div class="text-box">
+            <span class="sub-title">service guide</span>
+            <h3>KREAM은 처음이지? <br>서비스 소개를 확인해보세요.</h3>
+            <div class="btn-wrap"><a href="#" class="btn-link">서비스 안내</a></div>
+          </div>
+          <div class="img-box guide"></div>
+        </li>
+        <li class="banner-item col-6" banner-num="1">
+          <div class="text-box">
+            <span class="sub-title">Download the App</span>
+            <h3>KREAM 앱을 설치하여 <br>한정판 스니커즈를 FLEX 하세요!</h3>
+            <div class="btn-wrap"><a href="#" class="btn-link">앱 설치하기</a></div>
+          </div>
+          <div class="img-box down"></div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer id="footer"></footer>
+
+  <script src="./js/jquery-1.12.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script defer src="./js/main.js"></script>
+</body>
+</html>

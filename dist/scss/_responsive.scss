@@ -1,0 +1,255 @@
+// resonsive font styles
+@media screen and (min-width: 280px) and (max-width: 319px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 413px) {
+  html {
+    font-size: 68.75%;
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 1023px) {
+  html {
+    font-size: 75%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+// resonsive contents styles
+@include mobile {
+  #main-slide {
+    .main-visual {
+      .swiper-slide {
+        width: 100%;
+        height: 30rem;
+        &[slide-item="0"] {
+          background: url(../../images/m_hero_01.jpg) no-repeat center;
+          background-size: cover;
+        }
+        &[slide-item="1"] {
+          background: url(../../images/m_hero_02.jpg) no-repeat center;
+          background-size: cover;
+        }
+        &[slide-item="2"] {
+          background: url(../../images/m_hero_03.jpg) no-repeat center;
+          background-size: cover;
+        }
+        &[slide-item="3"] {
+          background: url(../../images/m_hero_04.jpg) no-repeat center;
+          background-size: cover;
+        }
+        &[slide-item="4"] {
+          background: url(../../images/m_hero_05.jpg) no-repeat center;
+          background-size: cover;
+        }
+        &[slide-item="5"] {
+          background: url(../../images/m_hero_06.jpg) no-repeat center;
+          background-size: cover;
+        }
+        &[slide-item="6"] {
+          background: url(../../images/m_hero_07.jpg) no-repeat center;
+          background-size: cover;
+        }
+        &[slide-item="7"] {
+          background: url(../../images/m_hero_08.jpg) no-repeat center;
+          background-size: cover;
+        }
+      }
+      .swiper-pagination, .swiper-button-prev, .swiper-button-next {
+        display: none;
+      }
+      .swiper-scrollbar {
+        display: block;
+        height: 0.2rem;
+        bottom: 1.9rem;
+        background-color: rgba(255, 255, 255, 0.50);
+      }
+      .swiper-scrollbar-drag {
+        background-color: #fff;
+      }
+    }
+  }
+  #shop-card {
+    .sc-title {
+      margin-bottom: 0;
+    }
+    .card-list {
+      li {
+        .thumb {
+          &[category-item="0"] {
+            background-image: url(../../images/m-category-01.png);
+          }
+          &[category-item="1"] {
+            background-image: url(../../images/m-category-02.png);
+          }
+          &[category-item="2"] {
+            background-image: url(../../images/m-category-03.png);
+          }
+          &[category-item="3"] {
+            background-image: url(../../images/m-category-04.png);
+          }
+          &[category-item="4"] {
+            background-image: url(../../images/m-category-05.png);
+          }
+          &[category-item="5"] {
+            background-image: url(../../images/m-category-06.png);
+          }
+          &[category-item="6"] {
+            background-image: url(../../images/m-category-07.png);
+          }
+          &[category-item="7"] {
+            background-image: url(../../images/m-category-08.png);
+          }
+          &[category-item="8"] {
+            background-image: url(../../images/m-category-09.png);
+          }
+          &[category-item="9"] {
+            background-image: url(../../images/m-category-10.png);
+          }
+        }
+      }
+    }
+  }
+  #new-product {
+    .contents-inner {
+      padding: 0;
+      padding-right: 0px;
+    }
+    .title-box {
+      padding-left: 16px;
+    }
+  }
+  #brand {
+    .card-list {
+      li {
+        .thumb {
+          &[brand-item="0"] {
+            background-image: url(../../images/m-brand-01.png);
+          }
+          &[brand-item="1"] {
+            background-image: url(../../images/m-brand-02.png);
+          }
+          &[brand-item="2"] {
+            background-image: url(../../images/m-brand-03.png);
+          }
+          &[brand-item="3"] {
+            background-image: url(../../images/m-brand-04.png);
+          }
+          &[brand-item="4"] {
+            background-image: url(../../images/m-brand-05.png);
+          }
+          &[brand-item="5"] {
+            background-image: url(../../images/m-brand-06.png);
+          }
+          &[brand-item="6"] {
+            background-image: url(../../images/m-brand-07.png);
+          }
+          &[brand-item="7"] {
+            background-image: url(../../images/m-brand-08.png);
+          }
+          &[brand-item="8"] {
+            background-image: url(../../images/m-brand-09.png);
+          }
+          &[brand-item="9"] {
+            background-image: url(../../images/m-brand-10.png);
+          }
+          &[brand-item="10"] {
+            background-image: url(../../images/m-brand-11.png);
+          }
+          &[brand-item="11"] {
+            background-image: url(../../images/m-brand-12.png);
+          }
+          &[brand-item="12"] {
+            background-image: url(../../images/m-brand-13.png);
+          }
+          &[brand-item="13"] {
+            background-image: url(../../images/m-brand-14.png);
+          }
+          &[brand-item="14"] {
+            background-image: url(../../images/m-brand-15.png);
+          }
+        }
+      }
+    }
+  }
+  #banner {
+    .banner-box {
+      height:34rem;
+      background-image: url(../../images/m-banner.png);
+    }
+  }
+  #popular-pd {
+    .contents-inner {
+      padding: 0;
+      padding-right: 0px;
+    }
+    .title-box {
+      padding-left: 16px;
+    }
+  }
+  #style-review {
+    .contents-inner {
+      padding: 0;
+    }
+    .swiper {
+      overflow-x: auto;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    .swiper-slide {
+      a {
+        display: block;
+        width: 11.5rem;
+      }
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none;
+    }
+  }
+  #bottom-banner {
+    .banner-list {
+      flex-direction: column;
+    }
+    .banner-item {
+      width: 100%;
+      max-width: 100%;
+      padding: 4rem 16px;
+      margin-bottom: 0;
+      .text-box {
+        .btn-wrap {
+          justify-content: flex-start;
+          .btn-more {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .img-box {
+        width: 20.7rem;
+        &.guide {
+          background-image: url('../../images/m-service-01.png');
+        }
+        &.down {
+          background-image: url('../../images/m-service-02.png');
+        }
+      }
+    }
+  }
+}
+@include tablet {
+}
+@include laptop {
+}
+@include desktop {
+}
+
